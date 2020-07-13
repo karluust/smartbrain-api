@@ -11,7 +11,6 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 const db = knex({
     client: 'pg',
     connection: {
